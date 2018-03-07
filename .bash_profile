@@ -2,14 +2,7 @@ export EDITOR=vim
 
 # Setup Golang
 export GOPATH=$HOME/go
-
-# Bake autocompletion
-_bake () {
-  local cur=${COMP_WORDS[COMP_CWORD]}
-  local tasks="$(bake | grep -v BAKEFILE | grep '^  ' | sed 's/^  //g' | cut -f1 -d' ')"
-  COMPREPLY=( $(compgen -W "$tasks" -- $cur) )
-}
-complete -F _bake bake
+export PATH=$PATH:$GOPATH/bin
 
 # Setup NVM
 export NVM_DIR="$HOME/.nvm"
@@ -19,3 +12,18 @@ export NVM_DIR="$HOME/.nvm"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# Perform an `ls` after `cd`
+function cd {
+  builtin cd "$@" && ls -F
+}
+
+alias ll="ls -la"
+
+# Prettier branching view for git
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Add autojump to bash
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Show full path in terminal
+PS1="\w$ "
