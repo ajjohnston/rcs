@@ -1,0 +1,37 @@
+{
+    "docker.showExplorer": false,
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#5C6970"
+                }
+            }
+        ]
+    },
+    "eslint.autoFixOnSave": true,
+    "explorer.openEditors.visible": 0,
+    "files.insertFinalNewline": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true
+    },
+    "go.coverageDecorator": "gutter",
+    "go.coverOnSave": true,
+    "go.formatTool": "goimports",
+    "go.testOnSave": true,
+    "javascript.validate.enable": false,
+    "search.exclude": {
+        "**/bower_components": true,
+        "**/node_modules": true
+    },
+    "tslint.autoFixOnSave": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.startupEditor": "none"
+}
