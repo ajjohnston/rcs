@@ -16,6 +16,14 @@
     },
     "eslint.autoFixOnSave": true,
     "explorer.openEditors.visible": 0,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
     "files.insertFinalNewline": true,
     "[go]": {
         "editor.formatOnSave": true,
@@ -26,11 +34,14 @@
     "go.formatTool": "goimports",
     "go.testOnSave": true,
     "javascript.validate.enable": false,
+    "[python]": {
+        "editor.formatOnSave": false
+    },
+    "python.linting.enabled": false,
     "search.exclude": {
         "**/bower_components": true,
         "**/node_modules": true
     },
-    "tslint.autoFixOnSave": true,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "none"
