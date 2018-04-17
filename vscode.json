@@ -1,48 +1,12 @@
 {
-    "docker.showExplorer": false,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
-    "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "comment",
-                "settings": {
-                    "fontStyle": "italic",
-                    "foreground": "#5C6970"
-                }
-            }
-        ]
-    },
     "eslint.autoFixOnSave": true,
-    "explorer.openEditors.visible": 0,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/*.pyc": true
-    },
-    "files.insertFinalNewline": true,
-    "[go]": {
-        "editor.formatOnSave": true,
-        "editor.insertSpaces": true
-    },
-    "go.coverageDecorator": "gutter",
     "go.coverOnSave": true,
+    "go.coverageDecorator": "gutter",
     "go.formatTool": "goimports",
     "go.testOnSave": true,
-    "javascript.validate.enable": false,
-    "[python]": {
-        "editor.formatOnSave": false
-    },
-    "python.linting.enabled": false,
-    "search.exclude": {
-        "**/bower_components": true,
-        "**/node_modules": true
-    },
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "none"
 }
