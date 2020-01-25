@@ -8,8 +8,8 @@
     "source.fixAll.tslint": true
   },
   "editor.detectIndentation": false,
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
