@@ -9,10 +9,5 @@ export LS_COLORS='rs=0:di=1;35:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;3
 
 PS1='\e[37;1m\u@\e[35m\W\e[0m\$ ' # this will change your prompt format
 
-# Perform an `ls` after `cd`
-function cd {
-  builtin cd "$@" && ls -F
-}
-
 # Prettier branching view for git
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
